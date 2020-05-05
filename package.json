@@ -58,7 +58,7 @@
     "typescript": "~3.8.0"
   },
   "files": [
-    "build/src"
+    "dist"
   ],
   "c8": {
     "exclude": [

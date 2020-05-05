@@ -1,7 +1,6 @@
 @axa-ch/retry-axios
-Copyright 2020 AXA Versicherungen AG.
 
-This is product a derivative work of the original software "retry-axios" developed by Justin Beckwith available at:
+This product is a derivative work of the original software "retry-axios" developed by Justin Beckwith available at:
 https://github.com/JustinBeckwith/retry-axios
 License Apacha-2.0
 

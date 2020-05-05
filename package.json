@@ -32,8 +32,19 @@
     "retry"
   ],
   "author": {
-    "name": "Justin Beckwith"
+    "name": "Justin Beckwith",
+    "url": "https://github.com/JustinBeckwith"
   },
+  "contributors": [
+    {
+      "name": "Aaron Prince",
+      "url": "https://github.com/AaronRPrince"
+    },
+    {
+      "name": "Andreas Deuschlinger",
+      "url": "https://github.com/axa-ch"
+    }
+  ],
   "license": "Apache-2.0",
   "peerDependencies": {
     "axios": "*"

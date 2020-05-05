@@ -1,5 +1,12 @@
 # @axa-ch/retry-axios
 
+**Note:** This is a redistribution of [`retry-axios`](https://github.com/JustinBeckwith/retry-axios) with following modifications:
+
+- Handling of cancelation tokens provided at:
+  https://github.com/JustinBeckwith/retry-axios/pull/99
+- Bundling and packaging for ES-Modules, CommonJS and UMD provided at:
+  https://github.com/JustinBeckwith/retry-axios/pull/107
+
 > Use Axios interceptors to automatically retry failed requests.  Super flexible. Built in exponential backoff.
 
 [![NPM Version][npm-image]][npm-url]

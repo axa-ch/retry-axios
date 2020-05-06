@@ -6,8 +6,5 @@ License Apacha-2.0
 
 This redistribution contains following contributions:
 
-Handling of cancelation tokens provided by Aaron Prince at:
-https://github.com/JustinBeckwith/retry-axios/pull/99
-
 Bundling and packaging for ES-Modules, CommonJS and UMD provided by Andreas Deuschlinger at:
 https://github.com/JustinBeckwith/retry-axios/pull/107

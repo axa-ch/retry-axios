@@ -1,9 +1,12 @@
 {
-  "name": "retry-axios",
-  "version": "0.0.0",
+  "name": "@axa-ch/retry-axios",
+  "version": "2.1.2",
   "description": "Retry HTTP requests with Axios.",
-  "main": "./build/src/index.js",
-  "types": "./build/src/index.d.ts",
+  "source": "src/index.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.module.js",
+  "unpkg": "dist/index.umd.js",
+  "types": "dist/index.d.ts",
   "engines": {
     "node": ">=10.0.0"
   },
@@ -16,10 +19,11 @@
     "clean": "gts clean",
     "codecov": "c8 report --reporter=json && codecov -f coverage/*.json",
     "fix": "gts fix",
-    "compile": "tsc -p .",
+    "compile": "tsc -p tsconfig.compile.json",
+    "build": "microbundle --tsconfig=tsconfig.json",
     "umd": "rm -rf umd && babel build/src -d umd --source-maps",
     "test": "c8 mocha build/test",
-    "prepare": "npm run compile",
+    "prepare": "npm run build",
     "pretest": "npm run compile",
     "license-check": "jsgl --local ."
   },
@@ -28,8 +32,15 @@
     "retry"
   ],
   "author": {
-    "name": "Justin Beckwith"
+    "name": "Justin Beckwith",
+    "url": "https://github.com/JustinBeckwith"
   },
+  "contributors": [
+    {
+      "name": "Andreas Deuschlinger",
+      "url": "https://github.com/axa-ch"
+    }
+  ],
   "license": "Apache-2.0",
   "peerDependencies": {
     "axios": "*"
@@ -47,13 +58,14 @@
     "codecov": "^3.5.0",
     "gts": "^2.0.0",
     "js-green-licenses": "^1.0.0",
+    "microbundle": "^0.11.0",
     "mocha": "^7.0.0",
     "nock": "^12.0.0",
     "semantic-release": "^17.0.4",
     "typescript": "~3.8.0"
   },
   "files": [
-    "build/src"
+    "dist"
   ],
   "c8": {
     "exclude": [

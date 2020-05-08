@@ -1,0 +1,10 @@
+@axa-ch/retry-axios
+
+This product is a derivative work of the original software "retry-axios" developed by Justin Beckwith available at:
+https://github.com/JustinBeckwith/retry-axios
+License Apacha-2.0
+
+This redistribution contains following contributions:
+
+Bundling and packaging for ES-Modules, CommonJS and UMD provided by Andreas Deuschlinger at:
+https://github.com/JustinBeckwith/retry-axios/pull/107

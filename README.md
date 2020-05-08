@@ -1,4 +1,9 @@
-# retry-axios
+# @axa-ch/retry-axios
+
+**Note:** This is a redistribution of [`retry-axios`](https://github.com/JustinBeckwith/retry-axios) with following modifications:
+
+- Bundling and packaging for ES-Modules, CommonJS and UMD provided at:
+  https://github.com/JustinBeckwith/retry-axios/pull/107
 
 > Use Axios interceptors to automatically retry failed requests.  Super flexible. Built in exponential backoff.
 
@@ -12,7 +17,7 @@
 ## Installation
 
 ```sh
-npm install retry-axios
+npm install @axa-ch/retry-axios
 ```
 
 ## Usage
@@ -21,14 +26,14 @@ To use this library, import it alongside of `axios`:
 
 ```js
 // Just import rax and your favorite version of axios
-const rax = require('retry-axios');
+const rax = require('@axa-ch/retry-axios');
 const axios = require('axios');
 ```
 
 Or, if you're using TypeScript / es modules:
 
 ```js
-import * as rax from 'retry-axios';
+import * as rax from '@axa-ch/retry-axios';
 import axios from 'axios';
 ```
 
